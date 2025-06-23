@@ -1,0 +1,16 @@
+name: test
+
+on:
+  push:
+    branches: [test]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello
+        run: "echo Hello"
